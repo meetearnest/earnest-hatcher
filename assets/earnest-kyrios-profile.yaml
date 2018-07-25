@@ -7,7 +7,7 @@ installPackages:
   - nodejs
   - python
   - python3
-  - virtualenv
+  - docker-ce
 
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you
