@@ -1,10 +1,10 @@
 #!/bin/bash
-set -euo pipefail
+KYRIOS_REPO_URL="https://github.com/earlye/kyrios"
 
 function setup_kyrios {
 	mkdir ~/.kyrios
 	cp -v ./assets/earnest-kyrios-profile.yaml ~/.kyrios/profile.yaml
-
+	git clone $KYRIOS_REPO_URL
 }
 
 function display_earnest_logo {
@@ -31,6 +31,15 @@ function display_startup_message {
 	echo "Bootstrapping with Kyrios..."
 }
 
+function verify_git_is_installed {
+	git --version &> /dev/null
+	if [[ $? -gt 0 ]]; then
+		echo "Git is not installed or accessible through the PATH variable, exiting."
+		exit 1
+	fi
+}
+
 display_earnest_logo
 display_startup_message
+verify_git_is_installed
 setup_kyrios
