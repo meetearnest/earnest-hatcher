@@ -4,7 +4,13 @@ KYRIOS_REPO_URL="https://github.com/earlye/kyrios"
 function setup_kyrios {
 	mkdir ~/.kyrios
 	cp -v ./assets/earnest-kyrios-profile.yaml ~/.kyrios/profile.yaml
-	git clone $KYRIOS_REPO_URL
+	git clone $KYRIOS_REPO_URL	
+}
+
+function run_kyrios {
+	cd kyrios
+	./kyrios.sh
+	cd ..
 }
 
 function display_earnest_logo {
@@ -43,3 +49,4 @@ display_earnest_logo
 display_startup_message
 verify_git_is_installed
 setup_kyrios
+run_kyrios
