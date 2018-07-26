@@ -8,6 +8,7 @@ installPackages:
   - nodejs
   - password-store
   - docker-ce
+  - keybase
 
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you
