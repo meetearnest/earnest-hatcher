@@ -1,13 +1,12 @@
 # installPackages is a list of packages that you want to have
 # installed.
 
-installPackages:
-  - git-open
-  - emacs 
-  - nodejs
-  - python
-  - python3
+installPackages:  
+  - pip
+  - homebrew
   - docker-ce
+  - emacs
+  - nodejs
 
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you

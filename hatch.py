@@ -1,8 +1,8 @@
 import os
 import sys
 
-pgauth_url = 'git@github.com:meetearnest/pgauth.git'
-aws_sts_token_generator_url = 'git@github.com:meetearnest/aws-sts.git'
+pgauth_url = 'https://github.com/meetearnest/pgauth.git'
+aws_sts_token_generator_url = 'https://github.com/meetearnest/aws-sts.git'
 git_folder = '~/git/'
 setup_user_github_username = 'earntech-setup-git'
 
@@ -20,15 +20,9 @@ def git_clone(target_url):
 def setup_git_folder():
 	os.system('mkdir ' + git_folder)
 
-def setup_github_user(username, password):
-	print('something')
-
 def main(args):
 	setup_git_folder
-	setup_github_user(setup_user_github_username, args[1])
 	install_aws_sts_token_generator()
 	install_pgauth()
-
-print(sys.argv)
 
 main(sys.argv)
