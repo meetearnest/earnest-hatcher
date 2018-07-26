@@ -1,6 +1,6 @@
 # Earnest Hatcher
 
-We must welcome the new Earnies!
+Let's welcome the new Earnies!
 
 ![](https://media.giphy.com/media/jvucQj4J72dPO/giphy.gif)
 
