@@ -3,11 +3,12 @@
 
 installPackages:
   - homebrew
-  - docker-ce
+  - pip
   - emacs
   - nodejs
   - virtualenv
   - password-store
+  - docker-ce
 
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you

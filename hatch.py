@@ -17,11 +17,7 @@ def install_pgauth():
 def git_clone(target_url):
 	os.system('git clone ' + target_url + ' ' + git_folder)
 
-def setup_git_folder():
-	os.system('mkdir ' + git_folder)
-
 def main(args):
-	setup_git_folder
 	install_aws_sts_token_generator()
 	install_pgauth()
 
