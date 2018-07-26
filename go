@@ -1,5 +1,8 @@
 #!/bin/bash
 
-./bootstrap.sh
+echo "Please enter the setup user's Github password, it can be found in 1Password"
+read SETUP_USER_GITHUB_PASSWORD
 
-python hatch.py
+#./bootstrap.sh
+
+python hatch.py $SETUP_USER_GITHUB_PASSWORD
