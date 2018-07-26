@@ -1,5 +1,9 @@
 # Earnest Hatcher
 
+We must welcome the new Earnies!
+
+![](https://media.giphy.com/media/jvucQj4J72dPO/giphy.gif)
+
 Use:
 
 Run `./go` and follow prompts. 
