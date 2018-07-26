@@ -4,7 +4,6 @@ import sys
 pgauth_url = 'https://github.com/meetearnest/pgauth.git'
 aws_sts_token_generator_url = 'https://github.com/meetearnest/aws-sts.git'
 git_folder = '~/git/'
-setup_user_github_username = 'earntech-setup-git'
 
 def install_aws_sts_token_generator():	
 	git_clone(aws_sts_token_generator_url, git_folder + 'aws-sts-token-generator')
