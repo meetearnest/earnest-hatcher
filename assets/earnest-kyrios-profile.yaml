@@ -7,9 +7,11 @@ installPackages:
   - emacs
   - nodejs
   - password-store
-  - docker-ce
   - keybase
-
+  - 1password
+  - 1password-cli
+  - docker-ce
+  
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you
 # want to remove if they're present.
