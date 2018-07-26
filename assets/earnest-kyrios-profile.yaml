@@ -1,12 +1,13 @@
 # installPackages is a list of packages that you want to have
 # installed.
 
-installPackages:  
-  - pip
+installPackages:
   - homebrew
   - docker-ce
   - emacs
   - nodejs
+  - virtualenv
+  - password-store
 
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you
