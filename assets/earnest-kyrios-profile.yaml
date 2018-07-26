@@ -6,7 +6,6 @@ installPackages:
   - pip
   - emacs
   - nodejs
-  - virtualenv
   - password-store
   - docker-ce
 
