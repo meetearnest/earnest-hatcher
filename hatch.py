@@ -14,6 +14,5 @@ def git_clone(target_url, folder):
 
 def main(args):
 	install_aws_sts_token_generator()
-	install_pgauth()
 
 main(sys.argv)
