@@ -2,7 +2,6 @@
 # installed.
 
 installPackages:
-  - xcode-cli
   - homebrew
   - pip
   - emacs
