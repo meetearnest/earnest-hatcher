@@ -4,7 +4,6 @@
 installPackages:
   - homebrew
   - pip
-  - emacs
   - nodejs
   - password-store
   - keybase
