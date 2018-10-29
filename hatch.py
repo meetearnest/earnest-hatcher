@@ -1,18 +1,28 @@
 import os
 import sys
 
-pgauth_url = 'https://github.com/meetearnest/pgauth.git'
-aws_sts_token_generator_url = 'https://github.com/meetearnest/aws-sts.git'
+#TODO monolith, my-ui, ???
+git_repos = dict([
+	('https://github.com/meetearnest/aws-sts.git', 'aws-sts-token-generator')
+])
 git_folder = '~/git/'
 
-def install_aws_sts_token_generator():	
-	git_clone(aws_sts_token_generator_url, git_folder + 'aws-sts-token-generator')
-	print('install aws sts token generator here')
+def git_clone_repos(folder):
+	for git_repo in git_repos:
+		print(git_repo)
+		git_clone_if_not_already_cloned(git_repo, git_repos[git_repo])
 
 def git_clone(target_url, folder):
 	os.system('git clone ' + target_url + ' ' + folder)
 
+def git_clone_if_not_already_cloned(target_url, folder):
+	if(os.path.exists(folder)):
+		print(folder + ' already exists, skipping git clone')
+		return None
+	else:
+		git_clone(target_url, folder)
+
 def main(args):
-	install_aws_sts_token_generator()
+	git_clone_repos(git_folder)
 
 main(sys.argv)
