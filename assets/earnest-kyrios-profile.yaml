@@ -10,6 +10,7 @@ installPackages:
   - 1password
   - 1password-cli
   - docker-ce
+  - virtualenv
   
 # It's not supported yet, but banPackages is a list of packages that
 # you *don't* want to have installed, or more specifically, that you
