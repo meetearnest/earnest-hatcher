@@ -5,7 +5,6 @@ installPackages:
   - homebrew
   - pip
   - nodejs
-  - password-store
   - keybase
   - 1password
   - 1password-cli
