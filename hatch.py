@@ -17,7 +17,7 @@ def git_clone(target_url, folder):
 	os.system('git clone ' + target_url + ' ' + folder)
 
 def git_clone_if_not_already_cloned(target_url, folder):
-	print('Cloning: ' + target_url + 'to' + folder)
+	print('Cloning: ' + target_url + ' to ' + folder)
 	if(os.path.exists(folder)):
 		print(folder + ' already exists, skipping git clone')
 		return None
