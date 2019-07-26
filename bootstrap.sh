@@ -45,8 +45,17 @@ function verify_git_is_installed {
 	fi
 }
 
+function setup_pyenv_bash_profile {
+	echo "Setting up pyenv in .bash_profile"
+	echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+}
+
 display_earnest_logo
 display_startup_message
 verify_git_is_installed
 setup_kyrios
 run_kyrios
+
+setup_pyenv_bash_profile
