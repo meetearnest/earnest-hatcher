@@ -52,8 +52,13 @@ function setup_pyenv_bash_profile {
 	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
 }
 
+function install_xcode_dependency_for_git {
+	xcode-select --install
+}
+
 display_earnest_logo
 display_startup_message
+install_xcode_dependency_for_git
 verify_git_is_installed
 setup_kyrios
 run_kyrios
